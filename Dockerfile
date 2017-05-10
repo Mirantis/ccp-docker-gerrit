@@ -57,7 +57,7 @@ RUN wget \
 
 #oauth2 plugin
 RUN wget \
-    ${GERRITFORGE_URL}/job/plugin-gerrit-oauth-provider-gh-master/${GERRITFORGE_ARTIFACT_DIR}/gerrit-oauth-provider/gerrit-oauth-provider.jar \
+    ${GERRITFORGE_URL}/job/plugin-oauth-${PLUGIN_VERSION}/${GERRITFORGE_ARTIFACT_DIR}/oauth/gerrit-oauth-provider.jar \
     -O ${GERRIT_HOME}/gerrit-oauth-provider.jar
 
 #download bouncy castle
